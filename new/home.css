@@ -1,0 +1,21 @@
+.container-menu{
+    background-color: #003C1B;
+    height: 141px;
+}
+.img-logo{
+    width: 271px;
+    padding-top: 36px;
+}
+.btn-outline-secondary{
+    height: 38px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+    
+}
+input[type=text]::placeholder {
+    color: #FFF;
+}
+.img-search {
+    width: 20px;
+}
