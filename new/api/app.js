@@ -5,7 +5,8 @@ const bodyParser = require('body-parser')
 
 const rotaProdutos = require('./routes/produtos')
 const rotaPedidos = require('./routes/pedidos');
-const rotaForms = require('./routes/formularios');
+const rotaFormlarios = require('./routes/formularios');
+const rotaUsuarios = require('./routes/usuarios');
 
 const res = require('express/lib/response');
 
@@ -30,7 +31,8 @@ app.use((req, res, next) => {
 
 app.use('/produtos', rotaProdutos);
 app.use('/pedidos', rotaPedidos);
-app.use('/formularios', rotaForms);
+app.use('/formularios', rotaFormlarios);
+app.use('/usuarios', rotaUsuarios);
 
 app.use((req, res, next) => {
     const erro = new Error('Não encontrado');
