@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
             'SELECT * FROM USUARIO',
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }
-                return res.status(201).send({response: resultado})
+                return res.status(201).send(resultado)
             }
         )
     })

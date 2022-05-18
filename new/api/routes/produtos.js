@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
             'SELECT * FROM produtos',
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }
-                return res.status(201).send({response: resultado})
+                return res.status(201).send(resultado)
             }
         )
     })
@@ -52,7 +52,7 @@ router.get('/:id_produto', (req, res, next) => {
             [req.params.id_produto],
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }
-                return res.status(201).send({response: resultado})
+                return res.status(201).send(resultado)
             }
         )
     })

@@ -1,33 +1,51 @@
-function GETusuarios(url) {
-    let request = new XMLHttpRequest()
-    request.open("GET", url, false);
-    request.send();
-    return request.responseText;
+async function fetchUsuarios() {
+    try {
+        const response = await fetch('http://localhost:3000/usuarios');
+
+    if(!response.ok) {
+        throw new Error(`Erro ao executar usuarios: ${response.status}`)
+    }
+
+    return await response.json();
+    } catch(e) {
+        console.log(e);
+    }
 }
 
-function criaLinha(usuario) {
-    console.log(usuarios);
-    linha = document.createElement("tr");
-    tdId = document.createElement("td");
-    tdNome = document.createElement("td");
-    tdId.innerHTML = usuario.id
-    tdNome.innerHTML = usuario.nome
+function listsUsuarios(postContainerElementId) {
+    const postContainerElement = document.getElementById(postContainerElementId);
 
-    linha.appendChild(tdId);
-    linha.appendChild(tdNome);
+    if (!postContainerElement) {
+        return;
+    }
 
-    return linha;
+    fetchUsuarios()
+    .then(usuarios => {
+        if(!usuarios) {
+            postContainerElement.innerHTML = 'Nenhum usuário encontrado';
+            return;
+        }
+
+        for(const usuario of usuarios) {
+            console.log(usuario)
+            postContainerElement.appendChild(postElement(usuario));
+        }
+    })
+    .catch((e) => {
+        console.log(e);
+    })
 }
 
-function main() {
-    data = GETusuarios("http://localhost:3000/usuarios");
-    let usuarios = JSON.parse(data);
-    let tabela = document.getElementById("tabela");
-    usuarios.forEach(element => {
-        let linha = criaLinha(element)
-        tabela.appendChild(linha)
-    });
+function postElement(usuario) {
+    const anchorElement = document.createElement('a');
+    anchorElement.innerText = usuario.USUARIO_ID + ' - ' + usuario.USUARIO_SAGRES;
 
+    const postTitleElement = document.createElement('h3');
+    postTitleElement.appendChild(anchorElement);
+    
+    return postTitleElement;
 }
 
-main();
+
+
+
