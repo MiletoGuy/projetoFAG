@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if (error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT USUARIO_ID, USUARIO_SAGRES FROM USUARIO',
+            'SELECT * FROM USUARIO',
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }
                 return res.status(201).send(resultado)
