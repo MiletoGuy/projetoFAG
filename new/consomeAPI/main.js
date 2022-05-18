@@ -27,7 +27,6 @@ function listsUsuarios(postContainerElementId) {
         }
 
         for(const usuario of usuarios) {
-            console.log(usuario)
             postContainerElement.appendChild(postElement(usuario));
         }
     })
@@ -40,7 +39,7 @@ function postElement(usuario) {
     const anchorElement = document.createElement('a');
     anchorElement.innerText = usuario.USUARIO_ID + ' - ' + usuario.USUARIO_SAGRES;
 
-    const postTitleElement = document.createElement('h3');
+    const postTitleElement = document.createElement('h2');
     postTitleElement.appendChild(anchorElement);
     
     return postTitleElement;
