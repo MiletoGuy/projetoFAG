@@ -30,7 +30,7 @@ function verificaLogin() {
             break;
         }
         else {
-            alert('Usuario ou Senha inválidos!')
+            document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha inválidos!';
             break;
         }
         }

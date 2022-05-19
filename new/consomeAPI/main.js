@@ -1,4 +1,4 @@
-async function fetchUsuarios() {
+/*async function fetchUsuarios() {
     try {
         const response = await fetch('http://localhost:3000/usuarios');
 
@@ -43,7 +43,9 @@ function postElement(usuario) {
     postTitleElement.appendChild(anchorElement);
     
     return postTitleElement;
-}
+}*/
+
+
 
 
 
