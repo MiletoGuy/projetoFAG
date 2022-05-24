@@ -29,8 +29,8 @@ app.use((req, res, next) => {
     next();
 }) 
 
-app.use('/produtos', rotaProdutos);
-app.use('/pedidos', rotaPedidos);
+//app.use('/produtos', rotaProdutos);
+//app.use('/pedidos', rotaPedidos);
 app.use('/formularios', rotaFormlarios);
 app.use('/usuarios', rotaUsuarios);
 
