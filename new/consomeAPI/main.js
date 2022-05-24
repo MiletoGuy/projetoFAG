@@ -46,6 +46,50 @@ function postElement(usuario) {
 }*/
 
 
+async function fetchFormularios() {
+    try {
+        const response = await fetch('http://localhost:3000/formularios/' + localStorage.getItem('departamento_usuario'));
+
+    if(!response.ok) {
+        throw new Error(`Erro ao executar formulários: ${response.status}`)
+    }
+
+    return await response.json();
+    } catch(e) {
+        console.log(e);
+    }
+}
+
+function mostraFormularios() {
+    fetchFormularios()
+    .then(formularios => {
+
+        formularios.forEach(element => {
+            console.log(element);
+        });
+    })
+    .catch((e) => {
+        console.log(e);
+    })
+}
+
+if(localStorage.getItem('departamento_usuario') != null){
+    mostraFormularios();
+}
+else {
+    alert('ERRO!, Usuário não autenticado');
+    window.location.href='login.html';
+}
+
+localStorage.clear('departamento_usuario');
+
+
+
+
+
+
+
+
 
 
 

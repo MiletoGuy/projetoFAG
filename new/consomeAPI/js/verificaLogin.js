@@ -19,29 +19,23 @@ function verificaLogin() {
     fetchUsuarios()
     .then(usuarios => {
 
-        for(const usuario of usuarios) {
-           usuario;
-      
-        login = document.getElementById('usuario').value;
-        senha = md5(document.getElementById('senha').value);
+        usuarios.forEach(element => {
+            login = document.getElementById('usuario').value;
+            senha = md5(document.getElementById('senha').value);
 
-        if (login === usuario.USUARIO_SAGRES && senha === usuario.USUARIO_SENHA) {
-            window.location.href='home.html';
-            break;
-        }
-        else {
-            document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha inválidos!';
-            break;
-        }
-        }
-        
-        
+            if (login === element.USUARIO_SAGRES && senha === element.USUARIO_SENHA) {
+                localStorage.setItem('departamento_usuario', element.USUARIO_DEPARTAMENTO);
+                window.location.href='home.html';
+            }
+            else {
+                document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha inválidos!';
+            }
+        });
     })
     .catch((e) => {
         console.log(e);
     })
 }
-
 
 
 

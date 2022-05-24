@@ -37,12 +37,12 @@ router.post('/', (req, res, next) => {
 
 });
 
-router.get('/:FORM_ID', (req, res, next) => {
+router.get('/:FORM_DEPARTAMENTO', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if (error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT * FROM FORMULARIO WHERE FORM_ID = ?',
-            [req.params.FORM_ID],
+            'SELECT * FROM FORMULARIO WHERE FORM_DEPARTAMENTO = ?',
+            [req.params.FORM_DEPARTAMENTO],
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }
                 return res.status(201).send(resultado)
