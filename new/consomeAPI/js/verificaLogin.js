@@ -11,7 +11,9 @@ async function fetchUsuarios() {
 
     return await response.json();
     } catch(e) {
-        console.log(e);
+        if(e.toString() === 'TypeError: Failed to fetch') {
+            alert('Erro ao conectar a API!');
+        }
     }
 }
 
