@@ -1,21 +1,34 @@
 .container-menu{
     background-color: #003C1B;
     height: 141px;
+    
 }
 .img-logo{
     width: 271px;
     padding-top: 36px;
+    margin-left: 2rem;
 }
 .btn-outline-secondary{
     height: 38px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    
+    margin-top: 2rem;
+
     
 }
 input[type=text]::placeholder {
     color: #FFF;
+    margin-top: 2rem;
 }
 .img-search {
     width: 20px;
+}
+    
+.form-control {
+margin-top: 2rem;
+margin-left: 40%;
+
+}
+.usuario{
+    margin: 2.3rem;
 }
