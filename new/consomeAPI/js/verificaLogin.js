@@ -29,6 +29,9 @@ function verificaLogin() {
                 localStorage.setItem('departamento_usuario', element.USUARIO_DEPARTAMENTO);
                 window.location.href='home.html';
             }
+            else if (login == '' || senha == '') {
+                document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha não informados!';
+            }
             else {
                 document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha inválidos!';
             }

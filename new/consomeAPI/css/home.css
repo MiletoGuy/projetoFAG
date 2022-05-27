@@ -5,6 +5,7 @@
 .img-logo{
     width: 271px;
     padding-top: 36px;
+    margin-left: 27px;
 }
 .btn-outline-secondary{
     height: 38px;
@@ -18,4 +19,16 @@ input[type=text]::placeholder {
 }
 .img-search {
     width: 20px;
+}
+.form-control{
+    margin-top: 23px;
+    margin-left: 40%;
+}
+.btn{
+    margin-top: 23px;
+}
+.usuario{
+    margin-top: 30px;
+    margin-left: 1%;
+    margin-right: 27px;
 }
