@@ -63,7 +63,6 @@ async function fetchFormularios() {
 function mostraFormularios() {
     fetchFormularios()
     .then(formularios => {
-
         formularios.forEach(element => {
             console.log(element);
         });

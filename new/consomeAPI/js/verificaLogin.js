@@ -29,11 +29,16 @@ function verificaLogin() {
                 localStorage.setItem('departamento_usuario', element.USUARIO_DEPARTAMENTO);
                 window.location.href='home.html';
             }
+<<<<<<< HEAD
             else if (login == '' || senha == '') {
                 document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha não informados!';
+=======
+            else if ((login === '' || null) && (senha === 'd41d8cd98f00b204e9800998ecf8427e')) {
+                document.getElementById('mensagemErro').innerHTML = 'Insira um usuário e uma senha!';
+>>>>>>> c70b8f6... Adicionado condição para se o usuário não digitar nada nos campos de usuário e senha
             }
             else {
-                document.getElementById('mensagemErro').innerHTML = 'Usuario ou Senha inválidos!';
+                document.getElementById('mensagemErro').innerHTML = 'Usuário ou senha inválidos!';
             }
         });
     })
