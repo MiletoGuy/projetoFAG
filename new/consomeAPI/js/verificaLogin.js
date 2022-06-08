@@ -29,9 +29,8 @@ function verificaLogin() {
                 localStorage.setItem('departamento_usuario', element.USUARIO_DEPARTAMENTO);
                 window.location.href='home.html';
             }
-            else if ((login === '' || null) && (senha === 'd41d8cd98f00b204e9800998ecf8427e')) {
-                document.getElementById('mensagemErro').innerHTML = 'Insira um usuário e uma senha!';
-            }
+            else if (login === '' || null) document.getElementById('mensagemErro').innerHTML = 'Usuário não informado!';
+            else if (senha === 'd41d8cd98f00b204e9800998ecf8427e') document.getElementById('mensagemErro').innerHTML = 'Senha não informada!';
             else {
                 document.getElementById('mensagemErro').innerHTML = 'Usuário ou senha inválidos!';
             }

@@ -1,0 +1,19 @@
+{
+  "name": "projetofag",
+  "version": "1.0.0",
+  "description": "inhe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiletoGuy/projetoFAG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiletoGuy/projetoFAG/issues"
+  },
+  "homepage": "https://github.com/MiletoGuy/projetoFAG#readme"
+}
