@@ -41,7 +41,7 @@ router.get('/:FORM_DEPARTAMENTO', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if (error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT * FROM FORMULARIO WHERE FORM_DEPARTAMENTO = ?',
+            'SELECT F.*, D.DEP_DESCRICAO FROM FORMULARIO F INNER JOIN DEPARTAMENTO D ON D.DEP_ID = F.FORM_DEPARTAMENTO WHERE FORM_DEPARTAMENTO = ?',
             [req.params.FORM_DEPARTAMENTO],
             (error, resultado, fields) => {
                 if (error) { return res.status(500).send({ error: error }) }

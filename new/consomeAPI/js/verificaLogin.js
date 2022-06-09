@@ -27,6 +27,7 @@ function verificaLogin() {
 
             if (login === element.USUARIO_SAGRES && senha === element.USUARIO_SENHA) {
                 localStorage.setItem('departamento_usuario', element.USUARIO_DEPARTAMENTO);
+                localStorage.setItem('email_usuario', element.USUARIO_EMAIL);
                 window.location.href='home.html';
             }
             else if (login === '' || null) document.getElementById('mensagemErro').innerHTML = 'Usuário não informado!';
