@@ -6,24 +6,24 @@ INSERT INTO DEPARTAMENTO VALUES(NULL,'Agronomia');
 INSERT INTO DEPARTAMENTO VALUES(NULL,'Enfermagem');
 INSERT INTO DEPARTAMENTO VALUES(NULL,'Medicina');
 
-INSERT INTO USUARIO VALUES(NULL,'luiz',md5('123456'),1);
-INSERT INTO USUARIO VALUES(NULL,'mateus',md5('123456'),2);
-INSERT INTO USUARIO VALUES(NULL,'joao',md5('123456'),3);
-INSERT INTO USUARIO VALUES(NULL,'luana',md5('123456'),4);
-INSERT INTO USUARIO VALUES(NULL,'matd',md5('123456'),5);
-INSERT INTO USUARIO VALUES(NULL,'acerola',md5('123456'),5);
-INSERT INTO USUARIO VALUES(NULL,'bruno',md5('123456'),6);
+INSERT INTO USUARIO VALUES(NULL,'luiz',md5('123456'),1,'luiz@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'mateus',md5('123456'),2,'mateus@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'joao',md5('123456'),3,'joao@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'luana',md5('123456'),4,'luana@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'matd',md5('123456'),5,'matd@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'acerola',md5('123456'),5,'acerola@teste.com');
+INSERT INTO USUARIO VALUES(NULL,'bruno',md5('123456'),6,'bruno@teste.com');
 
-INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,2,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,3,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,4,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,5,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,6,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome" : "nome", "asdasd": "asdasd"}');
-INSERT INTO FORMULARIO VALUES(NULL,7,'{"nome" : "nome", "asdasd": "asdasd"}');
+INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome": "Luiz", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,2,'{"nome": "Luan", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,3,'{"nome": "Gustavo", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,4,'{"nome": "Ciro", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,5,'{"nome": "Daniel", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,6,'{"nome": "Cleverson", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome": "Douglas", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome": "Lucas", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,1,'{"nome": "José", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
+INSERT INTO FORMULARIO VALUES(NULL,7,'{"nome": "Mateus", "Mensagem": "Dúvida sobre o curso", "Telefone": "4599999999"}');
 
 
 INSERT INTO ALTERACAO VALUES(NULL,'RESPONDIDO');
