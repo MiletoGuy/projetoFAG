@@ -37,8 +37,8 @@ function listaFormularios(formularioContainerElementId) {
 
 function postElement(formulario) {
     const anchorElement = document.createElement('a');
-    let FORM_FORMULARIO = JSON.parse(formulario.FORM_FORMULARIO);
-    anchorElement.innerText = formulario.DEP_DESCRICAO + ' - ' + FORM_FORMULARIO.nome + ' - ' +  FORM_FORMULARIO.mensagem + ' - ' + FORM_FORMULARIO.telefone;
+    let form = JSON.parse(formulario.FORM_FORMULARIO);
+    anchorElement.innerText = formulario.DEP_DESCRICAO + ' - ' + form.nome + ' - ' +  form.Mensagem + ' - ' + form.Telefone;
 
     const formularioTitleElement = document.createElement('h3');
     formularioTitleElement.appendChild(anchorElement);
