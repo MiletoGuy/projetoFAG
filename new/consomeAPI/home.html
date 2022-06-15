@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="home.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
     <link href="./css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script type="text/javascript" src="./js/md5.min.js"></script>
@@ -27,8 +28,16 @@
         </div>
     </div>
     <div style="display:flex;flex-direction:row">
-        <div style="display: flex;flex-direction: column;width: 20%;height: 100vh;background-color: #cfcece;"></div>
-        <div style="display: flex;flex-direction: column;width: 80%;height: 100vh;background-color: #EFEFEF;">
+        <div style="display: flex;flex-direction: column;width: 20%;height: 100vh;background-color: #cfcece;">
+            
+            <!--<div class="cursos">
+                <p>Arquitetura</p>
+                <p>Engenharia Civil</p>
+                <p>Engenharia de Software</p>
+            </div>-->
+            <p><input class="calendar" type="submit" value="Calendário" id="calendario"  /></p>
+        </div>
+                <div style="display: flex;flex-direction: column;width: 80%;height: 100vh;background-color: #EFEFEF;">
             <div id="formulario-lista"></div>
         </div>
     </div>
@@ -36,6 +45,14 @@
 
 </body>
 
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( "#calendario" ).datepicker();
+        
+    });
+    </script>
     <script>
         if(localStorage.getItem('departamento_usuario') != null){
             listaFormularios('formulario-lista');
