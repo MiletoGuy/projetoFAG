@@ -32,3 +32,27 @@ input[type=text]::placeholder {
     margin-left: 1%;
     margin-right: 27px;
 }
+.sidebar{
+    width: 20%;
+    flex-direction: column;
+    height: auto;
+}
+.bgbuttons{
+    background-color: #efefef;
+}
+.btn1{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 250px;
+}
+.btn2{
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+.cursosgrad{
+    font-weight: bold;
+}

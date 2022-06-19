@@ -27,29 +27,161 @@
             </div>
         </div>
     </div>
-    <div style="display:flex;flex-direction:row">
-        <div style="display: flex;flex-direction: column;width: 20%;height: 100vh;background-color: #cfcece;">
-            
-            <!--<div class="cursos">
-                <p>Arquitetura</p>
-                <p>Engenharia Civil</p>
-                <p>Engenharia de Software</p>
-            </div>-->
-            <p><input class="calendar" type="submit" value="Calendário" id="calendario"  /></p>
-        </div>
-                <div style="display: flex;flex-direction: column;width: 80%;height: 100vh;background-color: #EFEFEF;">
-            <div id="formulario-lista"></div>
+</header>
+<div class="bgbuttons">
+    <button class="btn-sm btn-outline-secondary border-0 btn1" type="button" id="newmsg" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Nova Mensagem <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></button>
+    <button class="btn-sm btn-outline-secondary border-0 btn2" type="button" id="responder" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Responder</button>
+    <button class="btn-sm btn-outline-secondary border-0 btn2" type="button" id="responder" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Encaminhar</button>
+    <button class="btn-sm btn-outline-secondary border-0 btn2" type="button" id="responder" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Deletar</button>
+    <button class="btn-sm btn-outline-secondary border-0 btn2" type="button" id="responder" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Spam</button>
+    <button class="btn-sm btn-outline-secondary border-0 btn2" type="button" id="responder" style="background-color: #05683E; border-radius: 5px; color:#FFFFFF;">Enviados</button>
+</div>
+<section>
+    <div>
+        <div class="d-flex sidebar flex-align-start" style="background-color: #efefef;">
+            <a class="cursosgrad" style="color: #05683E; text-decoration: none;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg> Cursos de Graduação
+            </a>
+            <div class="collapse" id="collapseExample">
+                < class="card card-body">
+                <span><a href="" class="" style="color: #05683E">Administração</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Agronomia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Arquitetura e Urbanismo</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Ciências Biológicas</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Ciências Contábeis</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Design Gráfico</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Direito</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Educação Física</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Enfermagem</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia Civil</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia de Controle e Automação</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia de Software</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia Elétrica</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia Mecânica</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharia Mecatrônica</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Farmácia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Fisioterapia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Fonoaudiologia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Fotografia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">História</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Jornalismo</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Letras Português/Espanhol</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Letras Português/Inglês</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Medicina</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Medicina Veterinária</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Negócios Imobiliários</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Nutrição</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Pedagogia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Produção Audiovisual</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Produção Multimídia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Psicologia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Publicidade e Propaganda</a></span><br>
+            </div>
+            </div>
         </div>
     </div>
-</header>
+</section>
+
+<section>
+    <div>
+        <div class="d-flex sidebar flex-align-start" style="background-color: #efefef;">
+            <a class="cursosgrad" style="color: #05683E; text-decoration: none;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg> Pós Graduação
+            </a>
+            <div class="collapse" id="collapseExample">
+            < class="card card-body">
+                <span><a href="" class="" style="color: #05683E">Ciências Agrárias e Veterinárias</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Ciências Humanas e da Saúde</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Comunicação Social</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Educação</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Engenharias e Arquiteturas</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão, Negócios e Direito</a></span><br>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+    <div>
+        <div class="d-flex sidebar flex-align-start" style="background-color: #efefef;">
+            <a class="cursosgrad" style="color: #05683E; text-decoration: none;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg> EAD - Educação a Distancia
+            </a>
+            <div class="collapse" id="collapseExample">
+            < class="card card-body">
+                <span><a href="" class="" style="color: #05683E">Administração</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Análise e Desenvolvimento de Sistemas</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Artes Visuais</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Ciências Contábeis</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Ciências Econômicas</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Design de Animação</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Geografia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão Ambiental</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão Comercial</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão da Qualidade</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão de Cooperativas</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão de Recursos Humanos</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão Financeira</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão Hospitalar</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Gestão Pública</a></span><br>
+                <span><a href="" class="" style="color: #05683E">História</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Jogos Digitais</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Letras - Português</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Logística</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Marketing</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Pedagogia</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Pedagogia - Segunda Licenciatura</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Processos Gerenciais</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Sistemas para Internet</a></span><br>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+    <div>
+        <div class="d-flex sidebar flex-align-start" style="background-color: #efefef;">
+            <a class="cursosgrad" style="color: #05683E; text-decoration: none;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg> Pós Graduação EAD 
+            </a>
+            <div class="collapse" id="collapseExample">
+            < class="card card-body">
+                <span><a href="" class="" style="color: #05683E">Especialização em docência do ensino fundamental</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em docência do ensino superior</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em educação especial</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em educação infantil</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão ambiental</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão de agronegócios</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão de cooperativas agroindustriais</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão de projetos</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão empresarial</a></span><br>
+                <span><a href="" class="" style="color: #05683E">Especialização em gestão pedagógica e escolar</a></span><br>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
 
 </body>
 
+<<<<<<< HEAD
   </div>
 
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 <script>
+=======
+<!--<script>
+>>>>>>> c31dbac5feb7633bc6ed44984ed3f51a8b0120d5
     $(function() {
         $( "#calendario" ).datepicker();
         
@@ -67,5 +199,5 @@
 
         localStorage.clear('departamento_usuario');
         localStorage.clear('email_usuario');
-    </script>
+    </script>-->
 </html>
