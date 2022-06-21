@@ -40,7 +40,7 @@ function postElement(formulario) {
     let form = JSON.parse(formulario.FORM_FORMULARIO);
     anchorElement.innerText = formulario.DEP_DESCRICAO + ' - ' + form.nome + ' - ' +  form.Mensagem + ' - ' + form.Telefone;
 
-    const formularioTitleElement = document.createElement('h3');
+    const formularioTitleElement = document.createElement('h4');
     formularioTitleElement.appendChild(anchorElement);
     
     return formularioTitleElement;

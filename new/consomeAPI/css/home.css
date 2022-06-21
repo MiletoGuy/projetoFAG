@@ -37,21 +37,24 @@ input[type=text]::placeholder {
     height: auto;
     
 }
-.sidebar2{
-    width: 200px;
-}
 .right {
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 100%;
 }
 .left {
-    padding: 40px;
+    padding: 15px;
     background: #efefef;
 }
 section.content {
     display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .bgbuttons{
     background-color: #efefef;
+    padding-right: 5px;
 }
 .btn1{
     margin-top: 10px;
@@ -68,4 +71,8 @@ section.content {
 }
 .cursosgrad{
     font-weight: bold;
+}
+.h4, h4 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E8E8E8;
 }
