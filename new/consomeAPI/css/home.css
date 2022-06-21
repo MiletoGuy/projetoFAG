@@ -33,9 +33,22 @@ input[type=text]::placeholder {
     margin-right: 27px;
 }
 .sidebar{
-    width: 20%;
     flex-direction: column;
     height: auto;
+    
+}
+.sidebar2{
+    width: 200px;
+}
+.right {
+    padding: 40px;
+}
+.left {
+    padding: 40px;
+    background: #efefef;
+}
+section.content {
+    display: flex;
 }
 .bgbuttons{
     background-color: #efefef;
