@@ -12,7 +12,7 @@ async function fetchFormularios() {
     }
 }
 
-function listaFormularios(formularioContainerElementId) {
+function listaMensagem(formularioContainerElementId) {
     const formularioContainerElement = document.getElementById(formularioContainerElementId);
 
     if (!formularioContainerElement) {
@@ -27,7 +27,7 @@ function listaFormularios(formularioContainerElementId) {
         }
 
         for(const formulario of formularios) {
-            formularioContainerElement.appendChild(postElement(formulario));
+            formularioContainerElement.appendChild(messageElement(formulario));
         }
     })
     .catch((e) => {
@@ -35,15 +35,49 @@ function listaFormularios(formularioContainerElementId) {
     })
 }
 
-function postElement(formulario) {
-    const anchorElement = document.createElement('a');
-    let form = JSON.parse(formulario.FORM_FORMULARIO);
-    anchorElement.innerText = formulario.DEP_DESCRICAO + ' - ' + form.nome + ' - ' +  form.Mensagem + ' - ' + form.Telefone;
+function messageElement(formulario) {
+    const anchorElement = document.createElement('p');
+    let form = JSON.parse(formulario.FORM_FORMULARIO[1]);
+    anchorElement.innerText = form.Mensagem + ' ' + form.Telefone;
 
-    const formularioTitleElement = document.createElement('h4');
-    formularioTitleElement.appendChild(anchorElement);
+    const formularioMessageElement = document.createElement('p');
+    formularioMessageElement.appendChild(anchorElement);
     
-    return formularioTitleElement;
+    return formularioMessageElement;
+}
+
+function listaAutor(formularioContainerElementId) {
+    const formularioContainerElement = document.getElementById(formularioContainerElementId);
+
+    if (!formularioContainerElement) {
+        return;
+    }
+
+    fetchFormularios()
+    .then(formularios => {
+        if(!formularios) {
+            formularioContainerElement.innerHTML = 'Nenhum usuário encontrado';
+            return;
+        }
+
+        for(const formulario of formularios) {
+            formularioContainerElement.appendChild(autorElement(formulario));
+        }
+    })
+    .catch((e) => {
+        console.log(e);
+    })
+}
+
+function autorElement(formulario) {
+    const anchorElement = document.createElement('p');
+    let form = JSON.parse(formulario.FORM_FORMULARIO[1]);
+    anchorElement.innerText = form.nome;
+
+    const formularioAutorElement = document.createElement('p');
+    formularioAutorElement.appendChild(anchorElement);
+    
+    return formularioAutorElement;
 }
 
 

@@ -217,25 +217,23 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="14" style="color:#BABABA;" height="14" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
             </svg>
-            <div class="d-flex emailname">Andressa Koffman</div>
+            <div class="d-flex emailname" id="formulario-autor"></div>
             <div class="emaildate">25/05/2022</div>
         </div>
-        <div class="emailcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-        <div id="formulario-lista"></div>
-        <div id="linha"></div>
+        <div class="emailcontent"><div id="formulario-mensagem"></div></div>
     </div>
 
 </div>
 </body>
-<!--<script>
+<script>
     $(function() {
         $( "#calendario" ).datepicker();
-        
     });
     </script>
     <script>
         if(localStorage.getItem('departamento_usuario') != null){
-            listaFormularios('formulario-lista');
+            listaAutor('formulario-autor');
+            listaMensagem('formulario-mensagem');
             document.getElementById('usuario_sagres').innerHTML =  localStorage.getItem('email_usuario');
         }
         else {
@@ -245,5 +243,5 @@
 
         localStorage.clear('departamento_usuario');
         localStorage.clear('email_usuario');
-    </script>-->
+    </script>
 </html>
