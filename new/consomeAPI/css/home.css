@@ -34,17 +34,18 @@ input[type=text]::placeholder {
 }
 .sidebar{
     flex-direction: column;
-    height: auto;
+    
     
 }
 .right {
-    padding-left: 40px;
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
     width: 100%;
 }
 .left {
     padding: 15px;
     background: #efefef;
+    width: 310px;
 }
 section.content {
     display: flex;
@@ -75,4 +76,31 @@ section.content {
 .h4, h4 {
     padding-bottom: 15px;
     border-bottom: 1px solid #E8E8E8;
+}
+#linha {
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+    padding-top: 10px;
+}
+.email{
+    width: 100%;
+}
+.linha1{
+    display: flex;
+    align-items: center;
+}
+.emailname{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.emailcontent{
+    color: #525252;
+    padding-left: 26px;
+}
+.emaildate{
+    margin-left: auto;
+    font-weight: bold;
+    color: #525252;
+    font-size: 15px;
+    padding-right: 20px;
 }
