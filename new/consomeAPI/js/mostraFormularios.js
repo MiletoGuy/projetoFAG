@@ -27,7 +27,9 @@ function listaMensagem(formularioContainerElementId) {
         }
 
         for(const formulario of formularios) {
-            formularioContainerElement.appendChild(messageElement(formulario));
+            let form = JSON.parse(formulario.FORM_FORMULARIO);
+            formularioContainerElement.innerHTML = form.Mensagem + ' Contato: ' + form.Telefone;
+            break;
         }
     })
     .catch((e) => {
@@ -35,16 +37,16 @@ function listaMensagem(formularioContainerElementId) {
     })
 }
 
-function messageElement(formulario) {
+/*function mensagemElement(formulario) {
     const anchorElement = document.createElement('p');
-    let form = JSON.parse(formulario.FORM_FORMULARIO[1]);
+    let form = JSON.parse(formulario.FORM_FORMULARIO);
     anchorElement.innerText = form.Mensagem + ' ' + form.Telefone;
 
-    const formularioMessageElement = document.createElement('p');
-    formularioMessageElement.appendChild(anchorElement);
+    const formularioMensagemElement = document.createElement('p');
+    formularioMensagemElement.appendChild(anchorElement);
     
-    return formularioMessageElement;
-}
+    return formularioMensagemElement;
+}*/
 
 function listaAutor(formularioContainerElementId) {
     const formularioContainerElement = document.getElementById(formularioContainerElementId);
@@ -61,7 +63,9 @@ function listaAutor(formularioContainerElementId) {
         }
 
         for(const formulario of formularios) {
-            formularioContainerElement.appendChild(autorElement(formulario));
+            let form = JSON.parse(formulario.FORM_FORMULARIO);
+            formularioContainerElement.innerHTML = form.nome;
+            break;
         }
     })
     .catch((e) => {
@@ -69,16 +73,16 @@ function listaAutor(formularioContainerElementId) {
     })
 }
 
-function autorElement(formulario) {
+f/*unction autorElement(formulario) {
     const anchorElement = document.createElement('p');
-    let form = JSON.parse(formulario.FORM_FORMULARIO[1]);
+    let form = JSON.parse(formulario.FORM_FORMULARIO);
     anchorElement.innerText = form.nome;
 
     const formularioAutorElement = document.createElement('p');
     formularioAutorElement.appendChild(anchorElement);
     
     return formularioAutorElement;
-}
+}*/
 
 
 
