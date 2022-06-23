@@ -28,7 +28,7 @@ function listaMensagem(formularioContainerElementId) {
 
         for(const formulario of formularios) {
             let form = JSON.parse(formulario.FORM_FORMULARIO);
-            formularioContainerElement.innerHTML = form.Mensagem + ' Contato: ' + form.Telefone;
+            formularioContainerElement.innerHTML = form.Mensagem + '. Contato: ' + form.Telefone;
             break;
         }
     })
